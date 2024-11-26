@@ -1,4 +1,4 @@
-name: Manual Deployment of ploneconf2024.avoinea.com
+name: Manual Deployment of ploneconf2024-avoinea.tangrama.com.br
 
 on:
   workflow_dispatch:

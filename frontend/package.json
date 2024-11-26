@@ -1,7 +1,7 @@
 {
   "name": "volto-ploneconf2024-dev",
   "version": "1.0.0-alpha.0",
-  "description": "ploneconf2024",
+  "description": "A new project using Plone 6.",
   "author": "Alin Voinea",
   "homepage": "https://github.com/avoinea/volto-ploneconf2024",
   "license": "MIT",

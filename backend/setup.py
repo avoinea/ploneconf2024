@@ -15,7 +15,7 @@ long_description = f"""
 setup(
     name="ploneconf2024",
     version="1.0.0a0",
-    description="ploneconf2024",
+    description="A new project using Plone 6.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     classifiers=[

@@ -1,6 +1,6 @@
-# DevOps Operations for ploneconf2024 🚀
+# DevOps Operations for Plone Conf 2024 🚀
 
-Welcome to the DevOps documentation for ploneconf2024! In this guide, we'll walk you through the setup and deployment process, ensuring a smooth and efficient development workflow. We leverage the power of [Ansible](https://www.ansible.com/), [Docker](https://www.docker.com/), and [Docker Swarm](https://docs.docker.com/engine/swarm/) to automate, containerize, and orchestrate application deployment. 🛠️🐳🌐
+Welcome to the DevOps documentation for Plone Conf 2024! In this guide, we'll walk you through the setup and deployment process, ensuring a smooth and efficient development workflow. We leverage the power of [Ansible](https://www.ansible.com/), [Docker](https://www.docker.com/), and [Docker Swarm](https://docs.docker.com/engine/swarm/) to automate, containerize, and orchestrate application deployment. 🛠️🐳🌐
 
 - **Ansible** empowers us to automate tasks like software provisioning, configuration management, and application deployment. It's like having a robot assistant that takes care of the repetitive tasks, freeing you to focus on more strategic activities! 🤖✨
 
@@ -43,11 +43,11 @@ Edit the `.env` file to suit your environment. For example:
 ```
 ANSIBLE_REMOTE_PORT=22
 DEPLOY_ENV=prod
-DEPLOY_HOST=ploneconf2024.avoinea.com
+DEPLOY_HOST=ploneconf2024-avoinea.tangrama.com.br
 DEPLOY_PORT=22
 DEPLOY_USER=plone
 DOCKER_CONFIG=.docker
-STACK_NAME=ploneconf2024-avoinea-com
+STACK_NAME=ploneconf2024-avoinea-tangrama-com-br
 ```
 
 Note: The `.env` file is included in `.gitignore`, ensuring environment-specific configurations aren't pushed to the repository.
@@ -55,7 +55,7 @@ Note: The `.env` file is included in `.gitignore`, ensuring environment-specific
 
 ### Server installation
 
-You need either a Ubuntu or Debian based system for ploneconf2024.avoinea.com, enable SSH, and install a supported version of Python 3 on that system.
+You need either a Ubuntu or Debian based system for ploneconf2024-avoinea.tangrama.com.br, enable SSH, and install a supported version of Python 3 on that system.
 
 
 ### Ansible Installation
@@ -74,10 +74,10 @@ Modify `devops/inventory/hosts.yml` with the appropriate connection details:
 ---
 prod:
   hosts:
-    ploneconf2024.avoinea.com:
+    ploneconf2024-avoinea.tangrama.com.br:
       ansible_user: root
-      host: ploneconf2024
-      hostname: ploneconf2024.avoinea.com
+      host: ploneconf2024-avoinea
+      hostname: ploneconf2024-avoinea.tangrama.com.br
 ```
 
 ## Server Setup
@@ -108,7 +108,7 @@ make docker-info
 
 ### Stack Deployment
 
-Deploy the stack defined in `devops/stacks/ploneconf2024.avoinea.com.yml` to the remote server with:
+Deploy the stack defined in `devops/stacks/ploneconf2024-avoinea.tangrama.com.br.yml` to the remote server with:
 
 ```shell
 make stack-deploy

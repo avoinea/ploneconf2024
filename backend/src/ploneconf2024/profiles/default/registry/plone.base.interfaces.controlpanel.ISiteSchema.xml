@@ -4,6 +4,6 @@
            prefix="plone"
            purge="false"
   >
-    <value key="site_title">ploneconf2024</value>
+    <value key="site_title">Plone Conf 2024</value>
   </records>
 </registry>

@@ -45,7 +45,7 @@ newSecurityManager(None, admin)
 
 site_id = "Plone"
 payload = {
-    "title": "ploneconf2024",
+    "title": "Plone Conf 2024",
     "profile_id": _DEFAULT_PROFILE,
     "setup_content": False,
     "default_language": "en",

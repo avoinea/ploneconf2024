@@ -28,7 +28,7 @@ FROM plone/server-prod-config:${PLONE_VERSION}
 
 LABEL maintainer="Alin Voinea <contact@avoinea.com>" \
       org.label-schema.name="ploneconf2024-backend" \
-      org.label-schema.description="ploneconf2024 backend image." \
+      org.label-schema.description="Plone Conf 2024 backend image." \
       org.label-schema.vendor="Alin Voinea"
 
 # Copy /app from builder

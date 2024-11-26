@@ -6,15 +6,15 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="ploneconf2024: Install"
-      description="Package to configure a new ploneconf2024 site"
+      title="Plone Conf 2024: Install"
+      description="Package to configure a new Plone Conf 2024 site"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       directory="profiles/default"
       />
 
   <genericsetup:registerProfile
       name="initial"
-      title="ploneconf2024: Example content"
+      title="Plone Conf 2024: Example content"
       description="Create example content to showcase the new website"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       directory="profiles/initial"
@@ -23,8 +23,8 @@
 
   <genericsetup:registerProfile
       name="uninstall"
-      title="ploneconf2024: Uninstall"
-      description="Uninstall ploneconf2024 setup."
+      title="Plone Conf 2024: Uninstall"
+      description="Uninstall Plone Conf 2024 setup."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       directory="profiles/uninstall"
       />

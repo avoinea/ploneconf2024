@@ -19,7 +19,7 @@ FROM plone/frontend-prod-config:${VOLTO_VERSION}
 
 LABEL maintainer="Alin Voinea <contact@avoinea.com>" \
       org.label-schema.name="ploneconf2024-frontend" \
-      org.label-schema.description="ploneconf2024 frontend image." \
+      org.label-schema.description="Plone Conf 2024 frontend image." \
       org.label-schema.vendor="Alin Voinea"
 
 COPY --from=builder /app/ /app/

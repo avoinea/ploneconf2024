@@ -1,11 +1,11 @@
-# ploneconf2024 🚀
+# Plone Conf 2024 🚀
 
 [![Built with Cookieplone](https://img.shields.io/badge/built%20with-Cookieplone-0083be.svg?logo=cookiecutter)](https://github.com/plone/cookiecutter-plone/)
 [![Black code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 [![Backend Tests](https://github.com/avoinea/ploneconf2024/actions/workflows/backend.yml/badge.svg)](https://github.com/avoinea/ploneconf2024/actions/workflows/backend.yml)
 [![Frontend Tests](https://github.com/avoinea/ploneconf2024/actions/workflows/frontend.yml/badge.svg)](https://github.com/avoinea/ploneconf2024/actions/workflows/frontend.yml)
 
-ploneconf2024
+A new project using Plone 6.
 
 ## Quick Start 🏁
 
@@ -107,4 +107,4 @@ make i18n
 
 ## Credits and Acknowledgements 🙏
 
-Crafted with care by **Generated using [Cookieplone (0.8.1)](https://github.com/plone/cookieplone) and [cookiecutter-plone (91cd1e6)](https://github.com/plone/cookiecutter-plone/commit/91cd1e637619608c5a0dcb5404d05369bd4703e4) on 2024-11-26 11:34:38.906012**. A special thanks to all contributors and supporters!
+Crafted with care by **Generated using [Cookieplone (0.8.1)](https://github.com/plone/cookieplone) and [cookiecutter-plone (e8c1b00)](https://github.com/plone/cookiecutter-plone/commit/e8c1b002f2ac52ea755959cec052bd7270dde60d) on 2024-11-26 14:41:58.655644**. A special thanks to all contributors and supporters!

@@ -28,7 +28,7 @@ FROM plone/server-acceptance:${PLONE_VERSION}
 
 LABEL maintainer="Alin Voinea <contact@avoinea.com>" \
       org.label-schema.name="ploneconf2024-acceptance" \
-      org.label-schema.description="ploneconf2024 backend acceptance image." \
+      org.label-schema.description="Plone Conf 2024 backend acceptance image." \
       org.label-schema.vendor="Alin Voinea"
 
 ENV CONFIGURE_PACKAGES="plone.restapi,plone.volto,plone.volto.cors,ploneconf2024"

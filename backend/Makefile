@@ -15,7 +15,7 @@ GREEN=`tput setaf 2`
 RESET=`tput sgr0`
 YELLOW=`tput setaf 3`
 
-IMAGE_NAME_PREFIX=avoinea/ploneconf2024
+IMAGE_NAME_PREFIX=ghcr.io/avoinea/ploneconf2024
 IMAGE_TAG=latest
 
 # Python checks

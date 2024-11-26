@@ -71,7 +71,7 @@ setup: bin/pip ## Ansible: Install Ansible and dependencies
 .PHONY: docker-setup
 docker-setup:  ## Docker: Setup remote docker context
 	@echo "$(GREEN)==> Docker: Setup remote docker context named ${CONTEXT} $(RESET)"
-	${DOCKER} context create ${CONTEXT} --description "ploneconf2024 deployment" --docker "host=${CONTEXT_HOST}"
+	${DOCKER} context create ${CONTEXT} --description "Plone Conf 2024 deployment" --docker "host=${CONTEXT_HOST}"
 
 .PHONY: docker-login
 docker-login:  ## Docker: Login
@@ -91,7 +91,7 @@ server-setup: bin/ansible ## Server: Configure a remote server
 .PHONY: stack-deploy
 stack-deploy: ## Deploy stacks: $(STACK_NAME)
 	@echo "$(GREEN)==> Stack $(STACK_NAME): Deploy to context $(DEPLOY_ENV) $(RESET)"
-	${DOCKER_CMD_CONTEXT} stack deploy --with-registry-auth -c stacks/ploneconf2024.avoinea.com.yml $(STACK_NAME)
+	${DOCKER_CMD_CONTEXT} stack deploy --with-registry-auth -c stacks/ploneconf2024-avoinea.tangrama.com.br.yml $(STACK_NAME)
 
 .PHONY: stack-create-site
 stack-create-site: ## Create a new site stacks: $(STACK_NAME)

@@ -13,7 +13,7 @@ Welcome to the DevOps operations guide for deploying your project using GitHub A
 3. Click on `Settings` at the top-right corner.
 4. In the left sidebar, click on `Environments`.
 5. Press `New environment`.
-6. Name the environment `ploneconf2024.avoinea.com` and hit `Configure environment`.
+6. Name the environment `ploneconf2024-avoinea.tangrama.com.br` and hit `Configure environment`.
 
 ### Step 2: Add Environment Secrets 🔒
 
@@ -24,11 +24,11 @@ After setting up the environment, it's time to add secrets. These are sensitive 
 
 | Secret Name | Secret Value | Description |
 |-------------|--------------|-------------|
-| DEPLOY_HOST | ploneconf2024.avoinea.com | The hostname or IP address of your Docker Swarm manager. |
+| DEPLOY_HOST | ploneconf2024-avoinea.tangrama.com.br | The hostname or IP address of your Docker Swarm manager. |
 | DEPLOY_PORT | 22 | The SSHD Port. |
 | DEPLOY_USER | plone | The user to connect to the deploy host, with permissions to run Docker commands. |
 | DEPLOY_SSH  | Contents of `devops/etc/keys/plone_prod_deploy_ed25519` | The private SSH key used for connection. The corresponding public key should be in the `~/.ssh/authorized_keys` file of the deployment user. |
-| ENV_FILE    | Contents of `devops/.env_file_gha` | The file containing environment variables used by the stack file. |
+| ENV_FILE    | Contents of `devops/.env_gha` | The file containing environment variables used by the stack file. |
 
 ### Step 3: Add Repository Variables 📚
 
@@ -40,7 +40,7 @@ Add the repository variable as follows:
 
 | Name     | Value |
 |----------|-------|
-| LIVE_ENV | ploneconf2024.avoinea.com |
+| LIVE_ENV | ploneconf2024-avoinea.tangrama.com.br |
 
 This variable is referenced in the `.github/workflows/manual_deploy.yml` file.
 
@@ -51,11 +51,11 @@ Ensure that both Backend and Frontend tests have been successfully executed:
 - [Backend Tests Workflow](https://github.com/avoinea/ploneconf2024/actions/workflows/backend.yml)
 - [Frontend Tests Workflow](https://github.com/avoinea/ploneconf2024/actions/workflows/frontend.yml)
 
-Upon successful completion of the tests, Docker images for the Backend (`avoinea/ploneconf2024-backend`) and Frontend (`avoinea/ploneconf2024-frontend`) will be available.
+Upon successful completion of the tests, Docker images for the Backend (`ghcr.io/avoinea/ploneconf2024-backend`) and Frontend (`ghcr.io/avoinea/ploneconf2024-frontend`) will be available.
 
 ### Initiating Manual Deployment
 
-1. Navigate to [Manual Deployment of ploneconf2024.avoinea.com](https://github.com/avoinea/ploneconf2024/actions/workflows/manual-deploy.yml).
+1. Navigate to [Manual Deployment of ploneconf2024-avoinea.tangrama.com.br](https://github.com/avoinea/ploneconf2024/actions/workflows/manual-deploy.yml).
 2. Click on `Run workflow`.
 3. Select `Branch: main` under **Use workflow from**.
 4. Press `Run workflow`.
@@ -63,7 +63,7 @@ Upon successful completion of the tests, Docker images for the Backend (`avoinea
 The workflow will execute the following actions:
 
 - Connect to **DEPLOY_HOST** using **DEPLOY_USER** and **DEPLOY_SSH** key.
-- Initiate a new deployment using the `devops/stacks/ploneconf2024.avoinea.com.yml` stack.
+- Initiate a new deployment using the `devops/stacks/ploneconf2024-avoinea.tangrama.com.br.yml` stack.
 - Provide a detailed report of the deployment outcome.
 
 Congratulations! 🎉 You've successfully configured and initiated a manual deployment using GitHub Actions. Monitor the workflow for real-time updates on the deployment process.
